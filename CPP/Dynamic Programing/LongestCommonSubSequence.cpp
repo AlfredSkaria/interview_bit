@@ -26,7 +26,7 @@ int longestCommonSubSequence(vector<char> word1, vector<char> word2){
             else{
                 sequence[i][j] = max(sequence[i][j-1], sequence[i-1][j]);
             }
-            cout << sequence[i-1][j-1]<<"("<<i-1<<j-1<<word1[i-1]<<word2[j-1]<<") ";
+            cout << sequence[i][j]<<"("<<i<<j<<word1[i-1]<<word2[j-1]<<") ";
         }
         cout <<"\n";
     }
