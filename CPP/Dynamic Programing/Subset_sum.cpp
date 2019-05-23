@@ -27,8 +27,8 @@ bool subsetSUm(vector<int> arr, int sum){
 }
 
 int main(){
-    vector<int> arr{2,3,7,8,10};
-    int sum = 11;
+    vector<int> arr{1,2,3,4,5};
+    int sum = 10;
     bool isThereASubSet = subsetSUm(arr,sum);
     cout << "can we make a subset out of this set with given sum: " << isThereASubSet;
     return 0;
