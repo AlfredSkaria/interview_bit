@@ -1,3 +1,16 @@
+/*Chef went to the store in order to buy one can of coke. In the store, they offer N cans of coke (numbered 1 through N). For each valid i, the current temperature of the i-th can is Ci and its price is Pi.
+
+After buying a can of coke, Chef wants to immediately start walking home; when he arrives, he wants to immediately drink the whole can. It takes Chef M minutes to get home from the store.
+
+The ambient temperature outside is K. When a can of coke is outside, its temperature approaches the ambient temperature. Specifically, if its temperature is t at some point in time:
+
+if t>K+1, then one minute later, its temperature will be t−1
+if t<K−1, then one minute later, its temperature will be t+1
+if K−1≤t≤K+1, then one minute later, its temperature will be K
+When Chef drinks coke from a can, he wants its temperature to be between L and R (inclusive). Find the cheapest can for which this condition is satisfied or determine that there is no such can.
+*/
+
+
 #include<iostream>
 #include<vector>
 #include <limits.h>
