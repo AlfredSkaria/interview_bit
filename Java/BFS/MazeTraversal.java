@@ -97,7 +97,7 @@ class MazeTraversal{
                         {1,0,1,1,1}};
 
         MazeTraversal m1 = new MazeTraversal();
-        Node destinationNode = m1.shortestPath(maze,0,0,1,4);
+        Node destinationNode = m1.shortestPath(maze,3,4,1,4);
         if(destinationNode !=  null){
             System.out.println("Shortest Path : " + destinationNode.dist);
         }else{
