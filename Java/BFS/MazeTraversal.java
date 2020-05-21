@@ -10,7 +10,7 @@ class Node{
 
 
 
-class MazeTraversal{
+public class MazeTraversal{
                     // D  U R L
     static int[] x1 = {1,-1,0, 0};
     static int[] y1 = {0, 0,1,-1};
@@ -52,7 +52,7 @@ class MazeTraversal{
             node.dist = 0;
             Queue<Node> que = new LinkedList<>();
             que.add(node);
-            booleanMaze[0][0] = false;
+            booleanMaze[3][4] = false;
                 
                 while(!que.isEmpty()){
 
@@ -62,18 +62,18 @@ class MazeTraversal{
                         p = point.x + x1[i];
                         q = point.y + y1[i];
                         dist = point.dist;
-                        //System.out.println("####");
+                        System.out.println("####");
                         //System.out.print(booleanMaze[point][q]);
-                        //System.out.println("***  (" + p + "," + q +")"+ " dist:" + dist);
+                        System.out.println("***  (" + p + "," + q +")"+ " dist:" + dist);
                         if(isValid(p, q, dist, booleanMaze, maze)){
-                            //System.out.println("##");
+                            //System.out.println("$$");
                             
                             dest.x = p;
                             dest.y = q;
                             dest.dist = point.dist + 1;
                             que.add(dest);
                             
-                            System.out.println("(" + dest.x + "," + dest.y +")"+ " dist:" + dest.dist);
+                            System.out.println(" $$ (" + dest.x + "," + dest.y +")"+ " dist:" + dest.dist);
                             
                         }
                         if(p == d1 && q==d2){

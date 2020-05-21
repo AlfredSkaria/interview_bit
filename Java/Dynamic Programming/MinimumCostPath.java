@@ -1,5 +1,3 @@
-import java.io.*;
-
 class  MinimumPath{
 
     public void display(){
